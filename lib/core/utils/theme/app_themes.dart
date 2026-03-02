@@ -2,6 +2,7 @@ import 'package:event_hub_app/core/utils/styles/app_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:event_hub_app/core/utils/colors/app_colors.dart';
 import 'package:event_hub_app/core/utils/styles/text_styles.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class AppTheme {
   AppTheme._();
@@ -22,6 +23,19 @@ class AppTheme {
       elevatedButtonTheme: _buildElevatedButtonTheme(),
       inputDecorationTheme: _buildInputDecorationTheme(),
       floatingActionButtonTheme: _buildFABTheme(),
+      extensions: [
+        SmoothPageIndicatorTheme(
+          effect: const SwapEffect(
+            type: SwapType.yRotation,
+            dotHeight: 8,
+            dotWidth: 8,
+          ),
+          defaultColors: DefaultIndicatorColors(
+            active: AppColors.white,
+            inactive: AppColors.white.withValues(alpha: .3),
+          ),
+        ),
+      ],
     );
   }
 
