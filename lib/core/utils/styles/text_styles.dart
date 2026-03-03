@@ -109,4 +109,9 @@ class AppStyles {
     fontWeight: FontWeight.w600,
     color: AppColors.title,
   );
+  static const TextStyle comment = TextStyle(
+    fontSize: 15,
+    fontWeight: FontWeight.w400,
+    color: AppColors.title,
+  );
 }

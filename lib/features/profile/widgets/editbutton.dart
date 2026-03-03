@@ -1,40 +1,64 @@
-import 'package:event_hub_app/core/utils/colors/app_colors.dart';
 import 'package:event_hub_app/core/utils/styles/text_styles.dart';
 import 'package:event_hub_app/core/widgets/custom_svg_picture.dart';
 import 'package:flutter/material.dart';
+import 'package:event_hub_app/core/utils/colors/app_colors.dart';
 
 class EditProfileButton extends StatelessWidget {
-  const EditProfileButton({super.key});
+  final String text;
+  final String path;
+  final bool isFilled;
+  final VoidCallback? onTap;
+
+  const EditProfileButton({
+    super.key,
+    required this.text,
+    required this.path,
+    this.isFilled = true,
+    this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 50,
+    final Color contentColor = isFilled
+        ? AppColors.white
+        : AppColors.primaryBlue;
+    final Color backgroundColor = isFilled
+        ? AppColors.primaryBlue
+        : Colors.transparent;
+
+    return SizedBox(
       width: 154,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10),
-        border: Border.all(
-          color: AppColors.primaryBlue,
-          width: 1.5,
+      height: 50,
+      child: Material(
+        color: backgroundColor,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12),
+          side: const BorderSide(
+            color: AppColors.primaryBlue,
+            width: 1.5,
+          ),
         ),
-      ),
-      child: Center(
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const CustomSvgPicture(
-              path: 'assets/icons/edit-rounded.svg',
-              width: 22,
-              height: 22,
-            ),
-            const SizedBox(width: 10),
-            Text(
-              'Edit Profile',
-              style: AppStyles.title1Medium18.copyWith(
-                color: AppColors.primaryBlue,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(12),
+          onTap: onTap,
+
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CustomSvgPicture(
+                path: path,
+                width: 22,
+                height: 22,
               ),
-            ),
-          ],
+              const SizedBox(width: 8),
+              Text(
+                text,
+                style: AppStyles.button.copyWith(
+                  color: contentColor,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
