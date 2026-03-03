@@ -11,7 +11,7 @@ class AboutMeSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-       const Text(
+        const Text(
           'About Me',
           style: AppStyles.graphtitle,
         ),

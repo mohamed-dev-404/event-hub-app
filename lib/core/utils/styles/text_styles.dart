@@ -98,7 +98,7 @@ class AppStyles {
     color: AppColors.white,
   );
 
-    //! ───────────────────────── Graphstyle ─────────────────────────
+  //! ───────────────────────── Graphstyle ─────────────────────────
   static const TextStyle graph = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w500,
@@ -109,5 +109,4 @@ class AppStyles {
     fontWeight: FontWeight.w600,
     color: AppColors.title,
   );
-
 }

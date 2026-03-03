@@ -96,11 +96,13 @@ class MyProfileView extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-             const Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children:  [
+                children: [
                   Text('Interest', style: AppStyles.title1Medium18),
-                  SmallButton(text: 'Change',)
+                  SmallButton(
+                    text: 'Change',
+                  ),
                 ],
               ),
 

@@ -27,7 +27,7 @@ class InterestChip extends StatelessWidget {
         ),
         child: Text(
           interest.title,
-          style: AppStyles.body2, 
+          style: AppStyles.body2,
         ),
       ),
     );

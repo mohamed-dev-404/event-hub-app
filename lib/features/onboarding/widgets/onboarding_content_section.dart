@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gap/flutter_gap.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-
 class OnboardingContentSection extends StatelessWidget {
   final String title;
   final String body;

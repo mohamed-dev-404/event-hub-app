@@ -15,20 +15,20 @@ class SmallButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       borderRadius: BorderRadius.circular(40),
-      onTap: (){},
+      onTap: () {},
       child: Container(
         padding: const EdgeInsets.symmetric(
           horizontal: 20,
           vertical: 12,
         ),
         decoration: BoxDecoration(
-          color: AppColors.smallEditButton, 
+          color: AppColors.smallEditButton,
           borderRadius: BorderRadius.circular(40),
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-          const CustomSvgPicture(
+            const CustomSvgPicture(
               path: 'assets/icons/edit.svg',
               width: 22,
               height: 22,
