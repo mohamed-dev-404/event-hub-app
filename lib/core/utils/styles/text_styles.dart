@@ -41,7 +41,7 @@ class AppStyles {
   static const TextStyle title1Medium18 = TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.w500,
-    color: AppColors.title,
+    color: AppColors.white,
   );
 
   static const TextStyle title2 = TextStyle(
