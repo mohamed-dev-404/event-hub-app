@@ -19,6 +19,7 @@ class AppColors {
   static const Color babyBlue = Color(0xFF46CDFB);
   static const Color bluePurple = Color(0xFF6B7AED);
   static const Color deepPurple = Color(0xFF7D67EE);
+  static const Color smallEditButton = Color(0xFFeef0ff);
   static const Color iconGry = Color(0xFF807A7A);
   static const Color strokGray = Color(0xFFE4DFDF);
   //! ───────────────────────── Typography Colors ─────────────────────────

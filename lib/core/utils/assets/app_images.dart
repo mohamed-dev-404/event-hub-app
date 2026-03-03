@@ -66,4 +66,6 @@ class AppImages {
   /// assets/images/bg.png
   static const String assetsImagesSplashBg = "assets/images/bg.png";
 
+  static const String profile = "assets/images/profile.png";
+
 }
