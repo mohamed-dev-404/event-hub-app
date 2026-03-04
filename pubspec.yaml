@@ -12,6 +12,7 @@ dependencies:
   flutter_advanced_drawer: ^1.5.0
   flutter_svg: ^2.2.3
   gap: ^3.0.1
+  quickalert: ^1.1.0
   smooth_page_indicator: ^2.0.1
   syncfusion_flutter_sliders: ^32.2.7
 

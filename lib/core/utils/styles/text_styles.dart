@@ -78,7 +78,7 @@ class AppStyles {
     color: AppColors.darkGray,
   );
 
-  static const TextStyle subTitle12 = TextStyle(
+  static const TextStyle subTitle1 = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.normal,
     color: AppColors.white,

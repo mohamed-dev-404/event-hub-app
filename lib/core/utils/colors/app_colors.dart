@@ -21,6 +21,7 @@ class AppColors {
   static const Color deepPurple = Color(0xFF7D67EE);
   static const Color iconGry = Color(0xFF807A7A);
   static const Color strokGray = Color(0xFFE4DFDF);
+  static const Color navBarGray = Color(0xFFDADADA);
   //! ───────────────────────── Typography Colors ─────────────────────────
   static const Color title = Color(0xFF120D26);
   static const Color subColor = Color(0xFF747688);
