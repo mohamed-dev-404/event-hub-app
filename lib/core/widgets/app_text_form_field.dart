@@ -53,7 +53,7 @@ class AppTextFormField extends StatelessWidget {
       decoration: InputDecoration(
         hintText: hintText,
         labelText: labelText,
-        prefixIcon: prefixIcon,
+        prefixIcon: FittedBox(fit: BoxFit.scaleDown, child: prefixIcon),
         suffixIcon: suffixIcon,
       ),
       validator: validator,
