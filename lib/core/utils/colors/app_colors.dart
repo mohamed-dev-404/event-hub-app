@@ -26,6 +26,7 @@ class AppColors {
   static const Color navBarGray = Color(0xFFDADADA);
   //! ───────────────────────── Typography Colors ─────────────────────────
   static const Color title = Color(0xFF120D26);
+  static const Color notification = Color(0xFF344B67);
   static const Color subColor = Color(0xFF747688);
   static const Color paragraph = Color(0xFF3C3E56);
   static const Color haifGray = Color(0xFF9D9898);

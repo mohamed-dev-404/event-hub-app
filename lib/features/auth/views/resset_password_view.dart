@@ -42,7 +42,7 @@ class RessetPasswordView extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const Align(
-                     alignment: Alignment.centerLeft,
+                    alignment: Alignment.centerLeft,
                     child: Text(
                       'Resst Password',
                       style: AppStyles.h4,
@@ -70,7 +70,7 @@ class RessetPasswordView extends StatelessWidget {
                   MainButton(
                     text: 'SENT',
                     onPressed: () {
-                     context.pushTo(const VerificationView());
+                      context.pushTo(const VerificationView());
                     },
                   ),
                 ],
