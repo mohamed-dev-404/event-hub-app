@@ -70,6 +70,9 @@ class AppIcons {
   /// Assets for assetsIconsFilter
   /// assets/icons/filter.svg
   static const String assetsIconsFilter = "assets/icons/filter.svg";
+  static const String assetsIconsSearchFilter =
+      "assets/icons/search_filter.svg";
+  static const String assetsIconsHomeFilter = "assets/icons/home_filter.svg";
 
   /// Assets for assetsIconsFood
   /// assets/icons/food.svg

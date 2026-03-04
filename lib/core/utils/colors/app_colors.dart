@@ -6,6 +6,7 @@ class AppColors {
   //! ───────────────────────── Primary Colors ─────────────────────────
   static const Color primaryBlue = Color(0xFF5669FF);
   static const Color blueDark = Color(0xFF3D56F0);
+  static const Color customAppBarBg = Color(0xFF4A43EC);
   static const Color primaryCyanSecondary = Color(0xFF00F8FF);
   static const Color white = Color(0xFFFFFFFF);
   static const Color offWhite = Color(0xFFFBFBFB);
