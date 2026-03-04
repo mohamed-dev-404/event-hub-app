@@ -45,9 +45,14 @@ class _NavBarViewState extends State<NavBarView> {
       floatingActionButton: _buildFab(),
 
       // Using IndexedStack to keep pages alive in memory
-      body: IndexedStack(
-        index: _currentIndex,
-        children: _views,
+      body: Padding(
+        padding: EdgeInsets.only(
+          bottom: MediaQuery.of(context).padding.bottom + 90.0,
+        ),
+        child: IndexedStack(
+          index: _currentIndex,
+          children: _views,
+        ),
       ),
 
       bottomNavigationBar: _buildBottomAppBar(),
