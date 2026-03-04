@@ -10,6 +10,6 @@ class NotificationModel {
     required this.name,
     required this.message,
     required this.time,
-    required this.button
+    required this.button,
   });
 }

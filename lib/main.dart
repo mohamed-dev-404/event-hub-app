@@ -23,7 +23,7 @@ class EventHub extends StatelessWidget {
           child: child ?? Container(),
         );
       },
-      home:  NotificationView(),
+      home: NotificationView(),
     );
   }
 }

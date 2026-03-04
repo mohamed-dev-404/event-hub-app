@@ -12,7 +12,7 @@ class NotificationViewEmpty extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: const Icon(Icons.arrow_back),
-        title: const Text('Notifications'), 
+        title: const Text('Notifications'),
         titleSpacing: 0,
         actions: const [
           Padding(
@@ -36,7 +36,7 @@ class NotificationViewEmpty extends StatelessWidget {
               const Gap(10),
               Text(
                 'Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit sed do eiusmod ',
-                      textAlign: TextAlign.center,
+                textAlign: TextAlign.center,
 
                 style: AppStyles.title2.copyWith(color: AppColors.notification),
               ),

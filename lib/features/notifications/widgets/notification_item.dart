@@ -45,7 +45,6 @@ class NotificationItem extends StatelessWidget {
                 ),
                 const SizedBox(height: 10),
 
-                
                 if (model.button)
                   const Row(
                     children: [

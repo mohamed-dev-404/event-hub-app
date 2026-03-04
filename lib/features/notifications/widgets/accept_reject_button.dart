@@ -23,9 +23,7 @@ class NotificationActionButton extends StatelessWidget {
       decoration: BoxDecoration(
         color: backgroundColor,
         borderRadius: BorderRadius.circular(10),
-        border: borderColor != null
-            ? Border.all(color: borderColor!)
-            : null,
+        border: borderColor != null ? Border.all(color: borderColor!) : null,
       ),
       alignment: Alignment.center,
       child: Text(
