@@ -1,13 +1,28 @@
 <div align="center">
 
-# 🎉 Event Hub App
+<br/>
 
-### A modern, feature-rich Flutter event discovery & management application
+<img src="assets/images/logo.svg" alt="Event Hub Logo" width="90" height="90" />
 
-[![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
-[![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS%20%7C%20Web-lightgrey?style=for-the-badge)](https://flutter.dev)
+# Event Hub
+
+### *Discover. Connect. Experience.*
+
+**A beautifully crafted Flutter app for finding and managing events around you**
+
+<br/>
+
+[![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?style=flat-square&logo=flutter&logoColor=white)](https://flutter.dev)
+[![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?style=flat-square&logo=dart&logoColor=white)](https://dart.dev)
+[![License](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS%20%7C%20Web-6366f1?style=flat-square)](https://flutter.dev)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-f59e0b?style=flat-square)](CONTRIBUTING.md)
+[![Stars](https://img.shields.io/github/stars/yourusername/event_hub_app?style=flat-square&color=f59e0b)](https://github.com/yourusername/event_hub_app/stargazers)
+
+<br/>
+
+[**Explore Features**](#-features) · [**Screenshots**](#-screenshots) · [**Quick Start**](#-getting-started)
+<br/>
 
 </div>
 
@@ -15,54 +30,130 @@
 
 ## 📱 Screenshots
 
-### Core Screens
+<br/>
 
-| Home | Search | Event Details | Empty Events | See All Events |
-|:----:|:------:|:-------------:|:------------:|:--------------:|
-| ![Home](screenshots/home.jpg) | ![Search](screenshots/auth.jpg) | ![Event Details](screenshots/map_events.jpg) | ![Empty Events](screenshots/splash_onboarding.jpg) | ![See All Events](screenshots/profile.jpg) |
+### 🏠 Core Screens
 
-### Profile & Notifications
+<div align="center">
 
-| Menu | My Profile | Organizer Profile | Empty Notifications | Notifications |
-|:----:|:----------:|:-----------------:|:-------------------:|:-------------:|
-| ![Menu](screenshots/home.jpg) | ![My Profile](screenshots/profile.jpg) | ![Organizer Profile](screenshots/map_events.jpg) | ![Empty Notif](screenshots/auth.jpg) | ![Notifications](screenshots/profile.jpg) |
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshots/home.jpg" width="100%" alt="Home Screen"/><br/>
+      <b>🏠 Home</b><br/>
+      <sub>Browse upcoming events near you</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshots/auth.jpg" width="100%" alt="Search Screen"/><br/>
+      <b>🔑 Auth</b><br/>
+      <sub>Find events by keyword or category</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshots/map_events.jpg" width="100%" alt="Event Details"/><br/>
+      <b>📋 Events</b><br/>
+      <sub>Full event info, venue & ticket purchase</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshots/splash_onboarding.jpg" width="100%" alt="Empty Events"/><br/>
+      <b>📭 intro</b><br/>
+      <sub>Friendly illustrated empty state</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="screenshots/profile.jpg" width="50%" alt="See All Events"/><br/>
+      <b>📃 profile</b><br/>
+      <sub>Paginated full event listing</sub>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+<br/>
 
 ---
 
 ## ✨ Features
 
-- 🏠 **Home Feed** — Discover upcoming events near you with personalized recommendations
-- 🔍 **Smart Search** — Search events by name, category, or location with real-time results
-- 📋 **Event Details** — View full event info including date, venue, host, and description
-- 🗺️ **Map Integration** — Explore events on an interactive map view
-- 🎟️ **Ticket Purchase** — Buy tickets directly within the app
-- 👤 **User Profiles** — Manage your profile, following, and bookmarks
-- 🧑‍💼 **Organizer Profiles** — Browse events by organizer with follow functionality
-- 🔔 **Notifications** — Stay updated with event reminders and social activity
-- 📅 **Calendar Sync** — Add events to your personal calendar
-- 🌐 **Splash & Onboarding** — Smooth intro experience for new users
+<br/>
+
+> **Event Hub** is built around one core idea — making event discovery effortless and social.
+
+<br/>
+
+| 🗂️ Category | 🔥 Feature | 📝 Description |
+|---|---|---|
+| **Discovery** | 🏠 Home Feed | Personalized event recommendations based on location & interests |
+| **Discovery** | 🔍 Smart Search | Real-time search by name, category, date, or organizer |
+| **Discovery** | 🗺️ Map View | Interactive map to explore nearby events visually |
+| **Events** | 📋 Event Details | Full info — date, venue, host bio, photos & description |
+| **Events** | 🎟️ Ticket Purchase | In-app ticket buying with digital wallet support |
+| **Events** | 📅 Calendar Sync | Add events directly to your device calendar |
+| **Social** | 👤 User Profiles | Manage your profile, following list & saved events |
+| **Social** | 🧑‍💼 Organizer Pages | Follow organizers and browse all their events |
+| **Social** | 👥 Invite Friends | Share events and invite friends directly from the app |
+| **System** | 🔔 Notifications | Event reminders, social activity & ticket alerts |
+| **System** | 🌟 Onboarding | Smooth, illustrated intro for first-time users |
+| **System** | 🌐 Multi-platform | Runs on Android, iOS & Web from a single codebase |
+
+<br/>
 
 ---
 
-## 🏗️ Project Structure
+## 🏗️ Architecture
+
+Event Hub follows a **Feature-First Clean Architecture** — each feature is a self-contained vertical slice with its own data, domain, and presentation layers.
+
 ```
-event_hub_app/
-├── lib/
-│   ├── core/              # Shared utilities, themes, constants
-│   ├── features/          # Feature-based modules
-│   │   ├── auth/
-│   │   ├── home/
-│   │   ├── events/
-│   │   ├── profile/
-│   │   ├── notifications/
-│   │   └── onboarding/
-│   └── main.dart          # App entry point
-├── assets/                # Images, fonts, icons
-├── screenshots/           # App screenshots
-├── android/               # Android native project
-├── ios/                   # iOS native project
-└── web/                   # Web platform support
+📦 event_hub_app/
+┃
+┣ 📂 lib/
+┃   ┣ 📂 core/                    # Shared infrastructure
+┃   ┃   ┣ 📂 helper/              #   → helper component
+┃   ┃   ┣ 📂 functions/           #   → core funcyions
+┃   ┃   ┣ 📂 widgets/             #   → core widgets
+┃   ┃   ┗ 📂 utils/               #   → Extensions, helpers, constants, Colors, typography, spacing
+┃   ┃
+┃   ┣ 📂 features/                # Feature modules
+┃   ┃   ┣ 📂 auth/                #   → Login, register, forgot password
+┃   ┃   ┣ 📂 splash/              #   → animated splash
+┃   ┃   ┣ 📂 onboarding/          #   → Splash, walkthrough screens
+┃   ┃   ┣ 📂 nav_bar/             #   → core of app
+┃   ┃   ┣ 📂 home/                #   → Feed, banners, categories
+┃   ┃   ┣ 📂 events/              #   → List, map, tickets
+┃   ┃   ┣ 📂 event_details/       #   → event detail, invite
+┃   ┃   ┣ 📂 search/              #   → Search bar, filters, results
+┃   ┃   ┣ 📂 profile/             #   → User & organizer profiles
+┃   ┃   └ 📂 notifications/       #   → Notification center
+┃   ┃   └ 📂 share_event/         #   → share_event
+┃   ┃
+┃   └ 📜 main.dart                # App entry point
+┃
+┣ 📂 assets/                      # Fonts, images, icons, animations
+┣ 📂 screenshots/                 # App store & README screenshots
+┣ 📂 test/                        # Unit, widget & integration tests
+┣ 📜 pubspec.yaml
+└ 📜 README.md
 ```
+
+Each feature module follows this internal structure:
+
+```
+feature/
+├── data/
+│   ├── datasources/      # Remote & local data sources
+│   ├── models/           # JSON serializable DTOs
+│   └── repositories/     # Concrete repository implementations
+└── presentation/
+    ├── pages/            # Full screen routes
+    ├── widgets/          # Reusable UI components
+    └── bloc/ (or cubit/) # State management
+```
+
+<br/>
 
 ---
 
@@ -70,103 +161,116 @@ event_hub_app/
 
 ### Prerequisites
 
-- [Flutter SDK](https://flutter.dev/docs/get-started/install) `>=3.0.0`
-- [Dart SDK](https://dart.dev/get-dart) `>=3.0.0`
-- Android Studio / Xcode (for mobile builds)
+Make sure you have the following installed:
 
-### Installation
+- **Flutter SDK** `>=3.0.0` — [Install Flutter](https://flutter.dev/docs/get-started/install)
+- **Dart SDK** `>=3.0.0` *(bundled with Flutter)*
+- **Android Studio** or **Xcode** for mobile targets
+- **VS Code** *(recommended)* with the Flutter extension
 
-1. **Clone the repository**
+Check your setup:
 ```bash
-   git clone https://github.com/yourusername/event_hub_app.git
-   cd event_hub_app
+flutter doctor -v
 ```
 
-2. **Install dependencies**
+<br/>
+
+### ⚡ Quick Start
+
 ```bash
-   flutter pub get
+# 1. Clone the repository
+git clone https://github.com/yourusername/event_hub_app.git
+cd event_hub_app
+
+# 2. Install dependencies
+flutter pub get
+
+# 3. Generate code (freezed, json_serializable, etc.)
+dart run build_runner build --delete-conflicting-outputs
+
+# 4. Run the app
+flutter run                    # Default connected device
+flutter run -d android         # Android emulator/device
+flutter run -d ios             # iOS simulator/device
+flutter run -d chrome          # Web (Chrome)
 ```
 
-3. **Run the app**
-```bash
-   # Android / iOS
-   flutter run
+<br/>
 
-   # Web
-   flutter run -d chrome
+### 📦 Build for Production
+
+```bash
+# Android — release APK
+flutter build apk --release
+
+# Android — App Bundle (recommended for Play Store)
+flutter build appbundle --release
+
+# iOS — release archive
+flutter build ios --release
+
+# Web — optimized build
+flutter build web --release --web-renderer canvaskit
 ```
 
-4. **Build for production**
-```bash
-   # Android APK
-   flutter build apk --release
-
-   # iOS
-   flutter build ios --release
-
-   # Web
-   flutter build web --release
-```
+<br/>
 
 ---
 
-## 🧱 Architecture
+## 🧪 Testing
 
-Event Hub App follows a **feature-first clean architecture** pattern:
+```bash
+# Run all tests
+flutter test
+
+# Run with coverage
+flutter test --coverage
+
+# View coverage report (requires lcov)
+genhtml coverage/lcov.info -o coverage/html
+open coverage/html/index.html
+
+# Integration tests
+flutter test integration_test/
 ```
-features/
-└── feature_name/
-    ├── data/          # Repositories, data sources, models
-    ├── domain/        # Entities, use cases, abstractions
-    └── presentation/  # UI pages, widgets, controllers
+
+Test structure follows the same feature-first layout:
+```
+test/
+├── core/          # Utility & service tests
+├── features/
+│   ├── auth/
+│   ├── events/
+│   └── ...
+└── helpers/       # Shared test fixtures & mocks
 ```
 
-| Layer | Responsibility |
-|-------|----------------|
-| `core/` | Shared theme, routing, network config, utilities |
-| `data/` | API calls, local storage, DTOs |
-| `domain/` | Business logic, use cases, entities |
-| `presentation/` | Widgets, pages, state management |
-
----
-
-## 📦 Dependencies
-
-| Package | Purpose |
-|---------|---------|
-| `flutter_bloc` / `provider` | State management |
-| `dio` / `http` | HTTP networking |
-| `go_router` | Navigation & routing |
-| `google_maps_flutter` | Map integration |
-| `cached_network_image` | Optimized image loading |
-| `intl` | Date & time formatting |
-| `shared_preferences` | Local storage |
-| `flutter_local_notifications` | Push notifications |
-
-> See [`pubspec.yaml`](pubspec.yaml) for the full dependency list.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a new branch: `git checkout -b feature/your-feature-name`
-3. Commit your changes: `git commit -m 'feat: add new feature'`
-4. Push to the branch: `git push origin feature/your-feature-name`
-5. Open a Pull Request
+<br/>
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for full details.
+
+```
+MIT License © 2024 Event Hub Contributors
+```
+
+<br/>
 
 ---
 
 <div align="center">
 
-Made with ❤️ using Flutter
+### ⭐ If you find this project useful, please give it a star!
+
+*It helps others discover the project and motivates further development.*
+
+<br/>
+
+**Built with ❤️ using [Flutter](https://flutter.dev)**
+
+<br/>
 
 </div>
