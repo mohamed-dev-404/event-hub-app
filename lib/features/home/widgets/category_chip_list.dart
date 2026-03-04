@@ -7,7 +7,8 @@ class CategoryChip extends StatelessWidget {
   final String icon;
   final Color color;
 
-  const CategoryChip({super.key, 
+  const CategoryChip({
+    super.key,
     required this.label,
     required this.icon,
     required this.color,
@@ -34,7 +35,10 @@ class CategoryChip extends StatelessWidget {
           SvgPicture.asset(
             icon,
             height: 18,
-            colorFilter: const ColorFilter.mode(AppColors.white, BlendMode.srcIn),
+            colorFilter: const ColorFilter.mode(
+              AppColors.white,
+              BlendMode.srcIn,
+            ),
           ),
           const SizedBox(width: 8),
           Text(
