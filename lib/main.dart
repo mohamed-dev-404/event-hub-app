@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:event_hub_app/core/utils/theme/app_themes.dart';
-import 'package:event_hub_app/features/profile/views/organizer_Profile_view.dart';
+import 'package:event_hub_app/features/splash/views/splash_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -23,7 +23,7 @@ class EventHub extends StatelessWidget {
           child: child ?? Container(),
         );
       },
-      home: const OrganizerProfileView(),
+      home: const SplashView(),
     );
   }
 }
