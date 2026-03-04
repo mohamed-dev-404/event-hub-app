@@ -54,13 +54,13 @@ class AppStyles {
 
   static const TextStyle mainBodyNormal16 = TextStyle(
     fontSize: 16,
-    fontWeight: FontWeight.normal,
+    fontWeight: FontWeight.w500,
     color: AppColors.title,
   );
 
   static const TextStyle body2 = TextStyle(
     fontSize: 15,
-    fontWeight: FontWeight.normal,
+    fontWeight: FontWeight.w500,
     color: AppColors.white,
   );
 
@@ -96,5 +96,22 @@ class AppStyles {
     fontSize: 16,
     fontWeight: FontWeight.w500,
     color: AppColors.white,
+  );
+
+  //! ───────────────────────── Graphstyle ─────────────────────────
+  static const TextStyle graph = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: AppColors.paragraph,
+  );
+  static const TextStyle graphtitle = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+    color: AppColors.title,
+  );
+  static const TextStyle comment = TextStyle(
+    fontSize: 15,
+    fontWeight: FontWeight.w400,
+    color: AppColors.title,
   );
 }

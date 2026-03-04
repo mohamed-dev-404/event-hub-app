@@ -1,7 +1,7 @@
 import 'package:event_hub_app/core/utils/colors/app_colors.dart';
 import 'package:event_hub_app/core/utils/styles/text_styles.dart';
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
+import 'package:flutter_gap/flutter_gap.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnboardingContentSection extends StatelessWidget {
