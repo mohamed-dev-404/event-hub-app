@@ -205,7 +205,7 @@ class HomeHeaderDelegate extends SliverPersistentHeaderDelegate {
           ),
           GestureDetector(
             onTap: () {
-              context.pushTo( NotificationView());
+              context.pushTo(NotificationView());
             },
 
             child: Container(

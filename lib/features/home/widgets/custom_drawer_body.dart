@@ -4,6 +4,7 @@ import 'package:event_hub_app/core/utils/assets/app_icons.dart';
 import 'package:event_hub_app/core/utils/assets/app_images.dart';
 import 'package:event_hub_app/core/utils/colors/app_colors.dart';
 import 'package:event_hub_app/core/utils/styles/text_styles.dart';
+import 'package:event_hub_app/features/notifications/views/notification_view.dart';
 import 'package:event_hub_app/features/profile/views/my_profile_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -56,7 +57,7 @@ class CustomDrawerBody extends StatelessWidget {
                     title: 'Message',
                     iconAsset: AppIcons.assetsIconsMessage,
                     onTap: () {
-                      comingSoonDialog(context);
+                      context.pushTo(NotificationView());
                     },
                     // The orange badge for messages
                     trailing: Container(
