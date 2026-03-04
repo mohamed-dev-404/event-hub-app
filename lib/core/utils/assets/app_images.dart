@@ -74,7 +74,7 @@ class AppImages {
   static const String assetsImagesSplashBg = "assets/images/bg.png";
 
   static const String profile = "assets/images/profile.png";
-  static const String mapView = "assets/images/map_view.svg";
+  static const String mapView = "assets/images/map_view.png";
   static const String homeTest0 = "assets/images/home_test_0.png";
 
   //static String get womenConference => null;
