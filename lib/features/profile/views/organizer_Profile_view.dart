@@ -69,7 +69,10 @@ class OrganizerProfileView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const Icon(Icons.arrow_back),
+        leading: GestureDetector(
+          onTap: () => Navigator.pop(context),
+          child: const Icon(Icons.arrow_back),
+        ),
         titleSpacing: 0,
         actions: const [Icon(Icons.more_vert_rounded)],
       ),

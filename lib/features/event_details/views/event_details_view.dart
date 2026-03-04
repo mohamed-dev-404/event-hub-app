@@ -1,3 +1,4 @@
+import 'package:event_hub_app/core/functions/navigations.dart';
 import 'package:event_hub_app/core/models/event_model.dart';
 import 'package:event_hub_app/core/utils/colors/app_colors.dart';
 import 'package:event_hub_app/core/utils/styles/text_styles.dart';
@@ -5,6 +6,7 @@ import 'package:event_hub_app/core/widgets/main_button.dart';
 import 'package:event_hub_app/features/event_details/views/invite_friends_view.dart';
 import 'package:event_hub_app/features/event_details/widgets/circle_icon_button.dart';
 import 'package:event_hub_app/features/event_details/widgets/going_invite_card.dart';
+import 'package:event_hub_app/features/profile/views/organizer_profile_view.dart';
 import 'package:flutter/material.dart';
 
 class EventDetailsView extends StatelessWidget {
@@ -203,43 +205,48 @@ class _OrganizerTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        CircleAvatar(
-          radius: 24,
-          backgroundColor: AppColors.smallEditButton,
-          backgroundImage: AssetImage(event.organizerAvatarAsset),
-        ),
-        const SizedBox(width: 12),
-        Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(event.organizerName, style: AppStyles.mainBodyNormal16),
-              const SizedBox(height: 2),
-              Text(
-                event.organizerRole,
-                style: AppStyles.subTitle1Medium13.copyWith(
-                  color: AppColors.subColor,
+    return InkWell(
+      onTap: () {
+        context.pushTo(const OrganizerProfileView());
+      },
+      child: Row(
+        children: [
+          CircleAvatar(
+            radius: 24,
+            backgroundColor: AppColors.smallEditButton,
+            backgroundImage: AssetImage(event.organizerAvatarAsset),
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(event.organizerName, style: AppStyles.mainBodyNormal16),
+                const SizedBox(height: 2),
+                Text(
+                  event.organizerRole,
+                  style: AppStyles.subTitle1Medium13.copyWith(
+                    color: AppColors.subColor,
+                  ),
                 ),
-              ),
-            ],
-          ),
-        ),
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-          decoration: BoxDecoration(
-            color: AppColors.primaryBlue.withValues(alpha: 0.1),
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: Text(
-            'Follow',
-            style: AppStyles.subTitle1Medium13.copyWith(
-              color: AppColors.primaryBlue,
+              ],
             ),
           ),
-        ),
-      ],
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            decoration: BoxDecoration(
+              color: AppColors.primaryBlue.withValues(alpha: 0.1),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Text(
+              'Follow',
+              style: AppStyles.subTitle1Medium13.copyWith(
+                color: AppColors.primaryBlue,
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
