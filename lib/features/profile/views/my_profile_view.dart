@@ -54,7 +54,7 @@ class MyProfileView extends StatelessWidget {
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('Interest', style: AppStyles.title1Medium18),
+                  Text('Interest', style: AppStyles.graphtitle),
                   SmallButton(
                     text: 'Change',
                   ),

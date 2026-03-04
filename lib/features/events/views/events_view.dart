@@ -25,68 +25,76 @@ class EventsView extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 48.0),
-        child: Column(
-          children: [
-            Container(
-              margin: const EdgeInsets.symmetric(horizontal: 20),
-              padding: const EdgeInsets.all(4),
-              decoration: BoxDecoration(
-                color: AppColors.strokGray,
-                borderRadius: BorderRadius.circular(30),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Container(
+                margin: const EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.all(4),
+                decoration: BoxDecoration(
+                  color: AppColors.strokGray,
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(vertical: 12),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(25),
+                        ),
+                        child: const Center(
+                          child: Text(
+                            'UPCOMING',
+                            style: AppStyles.subTitle2,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(vertical: 12),
+                        child: const Center(
+                          child: Text(
+                            'PAST EVENTS',
+                            style: AppStyles.title2,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
-              child: Row(
+
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Expanded(
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(vertical: 12),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(25),
-                      ),
-                      child: const Center(
-                        child: Text(
-                          'UPCOMING',
-                          style: AppStyles.subTitle2,
-                        ),
-                      ),
-                    ),
+                  Image.asset(
+                    AppImages.assetsImagesCalendar,
+                    width: 200,
+                    height: 200,
                   ),
-                  Expanded(
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(vertical: 12),
-                      child: const Center(
-                        child: Text(
-                          'PAST EVENTS',
-                          style: AppStyles.title2,
-                        ),
-                      ),
-                    ),
+                  const SizedBox(height: 31),
+                  const Text('NO Upcomping Event', style: AppStyles.graphtitle),
+                  const SizedBox(height: 13),
+                  const Text(
+                    'Lorm ipsum dolor sit amet, \n           consectetur',
+                    style: AppStyles.title2,
+                  ),
+                  const SizedBox(height: 80),
+
+                  MainButton(
+                    text: 'EXPLORE EVENTS',
+                    onPressed: () {
+                      context.pushTo(const SeeAllEvents());
+                    },
                   ),
                 ],
               ),
-            ),
-            const SizedBox(height: 98),
-            Image.asset(
-              AppImages.assetsImagesCalendar,
-              width: 200,
-              height: 200,
-            ),
-            const SizedBox(height: 31),
-            const Text('NO Upcomping Event', style: AppStyles.graphtitle),
-            const SizedBox(height: 13),
-            const Text(
-              'Lorm ipsum dolor sit amet, \n           consectetur',
-              style: AppStyles.title2,
-            ),
-            const Spacer(),
-            MainButton(
-              text: 'EXPLORE EVENTS',
-              onPressed: () {
-                context.pushTo(const SeeAllEvents());
-              },
-            ),
-            const SizedBox(height: 35),
-          ],
+              const SizedBox(height: 35),
+            ],
+          ),
         ),
       ),
     );

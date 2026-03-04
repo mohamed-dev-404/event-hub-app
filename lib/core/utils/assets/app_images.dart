@@ -26,8 +26,9 @@ class AppImages {
   /// Assets for assetsImagesLogo
   /// assets/images/logo.svg
   static const String assetsImagesLogo = "assets/images/logo.svg";
-  static const String assetsImagesLogoWithTitle = "assets/images/logowithtitle.svg";
-  
+  static const String assetsImagesLogoWithTitle =
+      "assets/images/logowithtitle.svg";
+
   /// Assets for assetsImagesNotification
   /// assets/images/notification.png
   static const String assetsImagesNotification =
