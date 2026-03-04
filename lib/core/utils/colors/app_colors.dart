@@ -5,7 +5,7 @@ class AppColors {
 
   //! ───────────────────────── Primary Colors ─────────────────────────
   static const Color primaryBlue = Color(0xFF5669FF);
-  static const Color blueDark = Color(0xFF3D56F0); 
+  static const Color blueDark = Color(0xFF3D56F0);
   static const Color primaryCyanSecondary = Color(0xFF00F8FF);
   static const Color white = Color(0xFFFFFFFF);
   static const Color offWhite = Color(0xFFFBFBFB);
@@ -19,6 +19,7 @@ class AppColors {
   static const Color babyBlue = Color(0xFF46CDFB);
   static const Color bluePurple = Color(0xFF6B7AED);
   static const Color deepPurple = Color(0xFF7D67EE);
+  static const Color smallEditButton = Color(0xFFeef0ff);
   static const Color iconGry = Color(0xFF807A7A);
   static const Color strokGray = Color(0xFFE4DFDF);
   //! ───────────────────────── Typography Colors ─────────────────────────
