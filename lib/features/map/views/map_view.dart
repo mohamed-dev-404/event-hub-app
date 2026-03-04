@@ -9,7 +9,7 @@ class MapView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-       
+        // Background Map Image
         Image.asset(
           AppImages.mapView,
           fit: BoxFit.cover,
@@ -17,16 +17,17 @@ class MapView extends StatelessWidget {
           height: double.infinity,
         ),
 
-    
         Scaffold(
           backgroundColor: Colors.transparent,
           body: Column(
             children: [
-             
+              // Top Search Bar Area
               SafeArea(
                 child: Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 12,
+                  ),
                   child: Row(
                     children: [
                       Expanded(
@@ -76,12 +77,14 @@ class MapView extends StatelessWidget {
 
               const Spacer(),
 
-             
+              // Bottom Horizontal List
               SizedBox(
-                height: 220, 
+                height: 200,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  padding: const EdgeInsets.only(
+                    left: 16,
+                  ), // Removed right padding to let items handle their own right margin
                   children: const [
                     MapEventItem(
                       imagePath: AppImages.assetsImagesHomeTest1,
@@ -123,7 +126,7 @@ class MapView extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(height: 16), 
+              const SizedBox(height: 16),
             ],
           ),
         ),
