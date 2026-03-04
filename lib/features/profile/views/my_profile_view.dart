@@ -25,8 +25,8 @@ class MyProfileView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const Icon(Icons.arrow_back),
-        titleSpacing: 0,
+        // leading: const Icon(Icons.arrow_back),
+        centerTitle: true,
         title: const Text('My Profile'),
       ),
       body: SingleChildScrollView(
@@ -42,6 +42,7 @@ class MyProfileView extends StatelessWidget {
               const EditProfileButton(
                 text: 'Edit Profile',
                 path: AppIcons.assetsIconsEdit,
+                isFilled: false,
               ),
 
               const SizedBox(height: 25),

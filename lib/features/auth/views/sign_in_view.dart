@@ -21,7 +21,7 @@ class SignInView extends StatefulWidget {
 }
 
 class _SignInViewState extends State<SignInView> {
-  bool remmberMe = false;
+  bool remmberMe = true;
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -167,6 +167,9 @@ class _SignInViewState extends State<SignInView> {
                         ),
                       ],
                     ),
+                  ),
+                  const SizedBox(
+                    height: 35,
                   ),
                 ],
               ),

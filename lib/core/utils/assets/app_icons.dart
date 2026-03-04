@@ -2,6 +2,7 @@
 class AppIcons {
   AppIcons._();
 
+
   /// Assets for assetsIconsAddBox
   /// assets/icons/add_box.svg
   static const String assetsIconsAddBox = "assets/icons/add_box.svg";
@@ -21,17 +22,25 @@ class AppIcons {
   /// Assets for assetsIconsBookmarkOutline
   /// assets/icons/Bookmark-outline.svg
   static const String assetsIconsBookmarkOutline =
+     
       "assets/icons/Bookmark-outline.svg";
 
   /// Assets for assetsIconsBookmarkSolid
   /// assets/icons/Bookmark_solid.svg
   static const String assetsIconsBookmarkSolid =
+     
       "assets/icons/Bookmark_solid.svg";
 
   /// Assets for assetsIconsCalendarSolid
   /// assets/icons/calendar-solid.svg
   static const String assetsIconsCalendarSolid =
+     
       "assets/icons/calendar-solid.svg";
+
+  /// Assets for assetsIconsCalendarSolid
+  /// assets/icons/calendar-outline.svg
+  static const String assetsIconsCalendarOutline =
+      "assets/icons/calendar-outline.svg";
 
   /// Assets for assetsIconsCopy
   /// assets/icons/copy.svg
@@ -48,6 +57,7 @@ class AppIcons {
   /// Assets for assetsIconsEmailRounded
   /// assets/icons/email-rounded.svg
   static const String assetsIconsEmailRounded =
+     
       "assets/icons/email-rounded.svg";
 
   /// Assets for assetsIconsExplore
@@ -89,16 +99,19 @@ class AppIcons {
   /// Assets for assetsIconsLocationOutline
   /// assets/icons/location-outline.svg
   static const String assetsIconsLocationOutline =
+     
       "assets/icons/location-outline.svg";
 
   /// Assets for assetsIconsLocationSolid
   /// assets/icons/Location-solid.svg
   static const String assetsIconsLocationSolid =
+     
       "assets/icons/Location-solid.svg";
 
   /// Assets for assetsIconsLogInOutline
   /// assets/icons/log-in-outline.svg
   static const String assetsIconsLogInOutline =
+     
       "assets/icons/log-in-outline.svg";
 
   /// Assets for assetsIconsMail
@@ -136,11 +149,13 @@ class AppIcons {
   /// Assets for assetsIconsPersonOutline
   /// assets/icons/person-outline.svg
   static const String assetsIconsPersonOutline =
+     
       "assets/icons/person-outline.svg";
 
   /// Assets for assetsIconsPersonSolidsolid
   /// assets/icons/person-solidsolid.svg
-  static const String assetsIconsPersonSolidsolid =
+  static const String assetsIconsPersonSolid =
+     
       "assets/icons/person-solidsolid.svg";
 
   /// Assets for assetsIconsPremium
