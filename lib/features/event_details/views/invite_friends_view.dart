@@ -75,48 +75,48 @@ class _InviteFriendsViewState extends State<InviteFriendsView> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: TextField(
-  onChanged: (value) {
-    setState(() {
-      _query = value.trim().toLowerCase();
-    });
-  },
-  decoration: InputDecoration(
-    hintText: 'Search',
-    hintStyle: AppStyles.subTitle1Medium13.copyWith(
-      color: AppColors.haifGray,
-    ),
+                    onChanged: (value) {
+                      setState(() {
+                        _query = value.trim().toLowerCase();
+                      });
+                    },
+                    decoration: InputDecoration(
+                      hintText: 'Search',
+                      hintStyle: AppStyles.subTitle1Medium13.copyWith(
+                        color: AppColors.haifGray,
+                      ),
 
-    filled: true,
-    fillColor: Colors.white,
+                      filled: true,
+                      fillColor: Colors.white,
 
-    contentPadding: const EdgeInsets.symmetric(
-      horizontal: 20,
-      vertical: 16,
-    ),
+                      contentPadding: const EdgeInsets.symmetric(
+                        horizontal: 20,
+                        vertical: 16,
+                      ),
 
-    suffixIcon:  const Icon(
-      Icons.search_rounded,
-      color:AppColors.primaryBlue ,
-      size: 20,
-    ),
+                      suffixIcon: const Icon(
+                        Icons.search_rounded,
+                        color: AppColors.primaryBlue,
+                        size: 20,
+                      ),
 
-    enabledBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(30),
-      borderSide: const BorderSide(
-        color: AppColors.strokGray,
-        width: 1,
-      ),
-    ),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(30),
+                        borderSide: const BorderSide(
+                          color: AppColors.strokGray,
+                          width: 1,
+                        ),
+                      ),
 
-    focusedBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(30),
-      borderSide: const BorderSide(
-        color: AppColors.primaryBlue,
-        width: 1.5,
-      ),
-    ),
-  ),
-),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(30),
+                        borderSide: const BorderSide(
+                          color: AppColors.primaryBlue,
+                          width: 1.5,
+                        ),
+                      ),
+                    ),
+                  ),
                 ),
                 const SizedBox(height: 12),
                 Expanded(
