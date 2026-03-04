@@ -2,6 +2,7 @@ import 'package:event_hub_app/core/models/event_model.dart';
 import 'package:event_hub_app/core/utils/colors/app_colors.dart';
 import 'package:event_hub_app/core/utils/styles/text_styles.dart';
 import 'package:event_hub_app/core/widgets/main_button.dart';
+import 'package:event_hub_app/features/event_details/views/invite_friends_view.dart';
 import 'package:event_hub_app/features/event_details/widgets/circle_icon_button.dart';
 import 'package:event_hub_app/features/event_details/widgets/going_invite_card.dart';
 import 'package:flutter/material.dart';
@@ -139,7 +140,10 @@ class EventDetailsView extends StatelessWidget {
             left: 24,
             right: 24,
             bottom: -30,
-            child: GoingInviteCard(event: event),
+            child: GoingInviteCard(
+              event: event,
+              onInvitePressed: () => InviteFriendsView.show(context, event),
+            ),
           ),
         ],
       ),
