@@ -181,4 +181,5 @@ class AppIcons {
   /// Assets for assetsIconsWhatsapp
   /// assets/icons/whatsapp.svg
   static const String assetsIconsWhatsapp = "assets/icons/whatsapp.svg";
+  static const String assetsIconsRelocat = "assets/icons/relocat.svg";
 }

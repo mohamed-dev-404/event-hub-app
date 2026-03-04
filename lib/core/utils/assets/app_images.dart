@@ -73,4 +73,5 @@ class AppImages {
   static const String assetsImagesSplashBg = "assets/images/bg.png";
 
   static const String profile = "assets/images/profile.png";
+  static const String mapView = "assets/images/map_view.svg";
 }
