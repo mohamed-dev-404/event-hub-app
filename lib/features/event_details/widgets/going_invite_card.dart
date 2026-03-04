@@ -7,8 +7,13 @@ import 'package:flutter/material.dart';
 
 class GoingInviteCard extends StatelessWidget {
   final EventModel event;
+  final VoidCallback onInvitePressed;
 
-  const GoingInviteCard({super.key, required this.event});
+  const GoingInviteCard({
+    super.key,
+    required this.event,
+    required this.onInvitePressed,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +64,7 @@ class GoingInviteCard extends StatelessWidget {
           const Spacer(),
           RoundedTextButton(
             label: 'Invite',
-            onPressed: () {},
+            onPressed: onInvitePressed,
           ),
         ],
       ),
