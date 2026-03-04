@@ -5,7 +5,9 @@ import 'package:flutter/material.dart';
 
 class ThirdAuthButton extends StatelessWidget {
   const ThirdAuthButton({
-    super.key, required this.text, required this.image,
+    super.key,
+    required this.text,
+    required this.image,
   });
   final String text;
   final String image;
@@ -27,7 +29,7 @@ class ThirdAuthButton extends StatelessWidget {
             width: 20,
           ),
           Text(
-           text,
+            text,
             style: AppStyles.button.copyWith(
               color: AppColors.title,
             ),
